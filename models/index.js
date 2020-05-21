@@ -13,7 +13,7 @@ const configOptions = {
 // ===== CONNECT
 mongoose.connect(connectionString, configOptions)
   .then(() => {
-    console.log('Connected to mongoDB at project-one db');
+    console.log('Connected to mongoDB at collabathon db');
   })
   .catch((err) => {
     console.log(err);

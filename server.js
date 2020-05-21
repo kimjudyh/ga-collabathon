@@ -24,13 +24,16 @@ app.use(methodOverride('_method'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // ===== ROUTES
+// Project landing page
 app.get('/', (req, res) => {
-  res.send('<h1>Avocados Anonymous</h1>')
-})
+  res.render('index', {
+    title: 'Home',
+  });
+});
 
 app.use('/signup', authController);
 
 // ===== SERVER LISTENER
 app.listen(port, () => {
   console.log('Server running on port', port);
-})
+});
