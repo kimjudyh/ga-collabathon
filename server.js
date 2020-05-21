@@ -2,10 +2,14 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
+const path = require('path');
 const session = require('express-session');
 
 const app = express();
 const port = process.env.PORT || 4000;
+
+// ===== temp database
+const db = require('./models');
 
 // ===== VIEW ENGINE
 app.set('view engine', 'ejs');
