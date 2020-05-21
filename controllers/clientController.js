@@ -7,8 +7,12 @@ const db = require('../models');
 
 // ==== ROUTES
 router.get('/', async (req, res) => {
+  const allUsers = await db.User.find();
+
+
   res.render('dashboard', {
     title: 'Dashboard',
+    users: allUsers,
   });
 });
 
