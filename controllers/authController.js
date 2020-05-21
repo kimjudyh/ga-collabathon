@@ -25,7 +25,7 @@ router.post('/', async (req, res) => {
   
       // Check If We Got A User Object Back From The Database
       if (user) {
-        return res.send('<h1>Account already exists, please login</h1>');
+        return res.send('<h1>Already signed up</h1>');
       }
   
       // TODO: Hash Password
