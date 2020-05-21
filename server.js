@@ -8,14 +8,12 @@ const session = require('express-session');
 const app = express();
 const port = process.env.PORT || 4000;
 
-// // ===== temp database
-// const db = require('./models');
-
 // ===== VIEW ENGINE
 app.set('view engine', 'ejs');
 
 // ===== CONTROLLERS
 const authController = require('./controllers/authController');
+const clientController = require('./controllers/clientController');
 
 // ===== MIDDLEWARE
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -24,14 +22,18 @@ app.use(methodOverride('_method'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // ===== ROUTES
-// Project landing page
+// Project home page
 app.get('/', (req, res) => {
   res.render('index', {
     title: 'Home',
   });
 });
 
+// User Controller
 app.use('/signup', authController);
+
+// Client Controller
+app.use('/client', clientController);
 
 // ===== SERVER LISTENER
 app.listen(port, () => {
