@@ -31,6 +31,7 @@ router.post('/', async (req, res) => {
       // TODO: Hash Password
   
       const userData = {
+        name: req.body.name,
         username: req.body.username,
         email: req.body.email,
       }
