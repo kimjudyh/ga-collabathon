@@ -8,7 +8,7 @@ const db = require('../models');
 // ==== ROUTES
 // GET Register New
 router.get('/', (req, res) => {
-    res.render('/signup', {
+    res.render('signup', {
         title: 'Sign up',
     });
 });
@@ -31,6 +31,7 @@ router.post('/', async (req, res) => {
       // TODO: Hash Password
   
       const userData = {
+        name: req.body.name,
         username: req.body.username,
         email: req.body.email,
       }
