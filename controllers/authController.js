@@ -8,7 +8,7 @@ const db = require('../models');
 // ==== ROUTES
 // GET Register New
 router.get('/', (req, res) => {
-    res.render('/signup', {
+    res.render('signup', {
         title: 'Sign up',
     });
 });
