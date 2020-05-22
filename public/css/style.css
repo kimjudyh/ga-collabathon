@@ -219,36 +219,45 @@ thead {
   /* padding: 0 40%; */
   font-weight: 700;
   letter-spacing: 1.25px;
+  font-family: 'futuraBold', sans-serif;
+  font-size: 32px;
+  color: var(--main-text-color);
 }
 
 .signup-page > p {
   margin-bottom: 4%;
   letter-spacing: 1.2px;
+  color: var(--main-text-color);
+  font-family: 'PTSansRegular', sans-serif;
+  font-size: 16px;
 }
 
 /* .signup-page > form {
   margin-top: 3%;
 } */
-.signup-input{
+.signup-input {
   margin: 8% auto 1%;
 }
 
 .form-row {
   display: inline-block;
   /* max-width: 350px; */
-  /* box-shadow: 1px 2.5px 1px  rgb(190,199,157); */
 }
 
 .cancel-signup {
   color: rgb(124,124,124);
   text-decoration: underline;
 }
+
 .form-row .form-control {
   width: 290px;
   border: 0;
   box-shadow: 0 0 0;
   color: #555555;
   padding: 10px 0;
+  border-bottom: 1.3px solid #efefef;
+  line-height: 20px;
+  margin-bottom: 5px;
   /* height: auto; */
 }
 
@@ -322,10 +331,16 @@ thead {
   font-size: 34px;
   font-weight: 780;
   letter-spacing: 1.25px;
+  color: var(--main-text-color);
+  font-family: 'futuraBold', sans-serif;
+  font-size: 32px;
 }
 
 .description > p {
   text-align: center;
+  color: var(--main-text-color);
+  font-family: 'PTSansRegular', sans-serif;
+  font-size: 16px;
 }
 
 .description > form {
@@ -351,18 +366,6 @@ thead {
 }
 
 
-
-
-/* .login-form-1 .form-control::-webkit-input-placeholder {
-  color: #999999;
-}
-
-.login-form-1 .form-control:-moz-placeholder,
-.login-form-1 .form-control::-moz-placeholder,
-.login-form-1 .form-control:-ms-input-placeholder {
-  color: #999999;
-} */
-
 /*============== MEDIA QUERY ==============*/
 
 @media screen and (max-width: 420px) {
@@ -387,7 +390,7 @@ thead {
   }
 
   .about {
-    max-width: 924px;
+    /* max-width: 924px; */
     padding-left: 80px;
     padding-right: 80px;
   }
