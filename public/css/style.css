@@ -71,6 +71,8 @@ p {
 nav {
   font-family: 'PTSansRegular', sans-serif;
   font-size: 22px;
+  background-color: white;
+  color: var(--main-text-color);
 }
 
 button {
@@ -145,6 +147,7 @@ button {
   outline: none;
   border: none;
   box-shadow: 0px 3px var(--green4-color);
+  font-size: 16px;
 }
 
 
@@ -185,12 +188,16 @@ thead {
 /*============== NAV BAR ==============*/
 .nav-link {
   color: black;
-  background-color: white;
+  /* background-color: white; */
 }
 
 .nav-item {
   font-size: 20px;
-  margin-left:70px;
+  margin-left:60px;
+}
+
+.navbar-toggler {
+  margin-right: 20px;
 }
 
 
