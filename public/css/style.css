@@ -167,10 +167,12 @@ button {
 
 /*========== SIGN UP PAGE ==========*/
 .signup-page {
+  background-image: url(/images/avo-circle-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
   margin: 0 auto;
-  padding: 5%;
+  padding: 10%;
   text-align: center;
-  background-color: rgb(219,219,219);
 }
 
 .signup-page > h1 {
@@ -182,26 +184,76 @@ button {
 
 .signup-page > p {
   margin-bottom: 3%;
-  padding: 0 39%;
 }
 
-.signup-page > form {
+/* .signup-page > form {
   margin-top: 3%;
-}
-
+} */
 .signup-input{
   margin: 13% auto 1%;
 }
 
 .form-row {
   display: inline-block;
+  /* max-width: 350px; */
+  /* box-shadow: 1px 2.5px 1px  rgb(190,199,157); */
 }
 
 .cancel-signup {
   color: rgb(124,124,124);
   text-decoration: underline;
 }
+.form-row .form-control {
+  width: 350px;
+  border: 0;
+  box-shadow: 0 0 0;
+  color: #555555;
+  padding: 10px 0;
+  height:auto;
+}
 
+/* .form-row .form-group {
+  margin-bottom: 0;
+  border-bottom: 1.3px solid #efefef;
+  padding-right: 100px;
+  position: relative;
+} */
+
+.form-group {
+  background: #ffffff;
+  color: #999999;
+  border-radius: 8px;
+  padding: 10px 25px;
+}
+
+/*======================= NEW FORM =======================*/
+/* .login-form-1 {
+  max-width: 350px;
+  display: inline-block;
+  box-shadow: 1px 2.5px 1px  rgb(190,199,157);
+}
+.login-form-1 .form-control {
+  border: 0;
+  box-shadow: 0 0 0;
+  color: #555555;
+  padding: 10px 0;
+  height:auto;
+}
+.login-form-1 .form-group {
+  margin-bottom: 0;
+  border-bottom: 1.3px solid #efefef;
+  padding-right: 100px;
+  position: relative;
+}
+.login-form-1 .form-group:last-child {
+  border-bottom: 0;
+}
+.login-group {
+  background: #ffffff;
+  color: #999999;
+  border-radius: 8px;
+  padding: 10px 25px;
+} */
 
 /*========== SIGN UP CONFIRMATION ==========*/
 .confirmation-page {
@@ -259,6 +311,18 @@ button {
 }
 
 
+
+
+/* .login-form-1 .form-control::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.login-form-1 .form-control:-moz-placeholder,
+.login-form-1 .form-control::-moz-placeholder,
+.login-form-1 .form-control:-ms-input-placeholder {
+  color: #999999;
+} */
+
 /*============== MEDIA QUERY ==============*/
 
 @media screen and (max-width: 420px) {
@@ -273,7 +337,7 @@ button {
   /* ------- Sign Up Page -------*/
   .signup-page {
     padding: 0;
-    background-color: white
+    background-image: none;
   }
   
   .signup-page > h1 {
