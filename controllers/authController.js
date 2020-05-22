@@ -20,8 +20,7 @@ router.post('/', async (req, res) => {
     console.log('New User Obj = ', req.body);
     try {
       // Create A New User
-      // Redirect To Home Page
-      const user = await db.User.findOne({username: req.body.username});
+      const user = await db.User.findOne({username: req.body.username, email: req.body.email});
   
       // Check If We Got A User Object Back From The Database
       if (user) {
@@ -39,8 +38,8 @@ router.post('/', async (req, res) => {
       // Creating the new user
       await db.User.create(userData);
   
-      // Redirect to home page
-      res.redirect('/');
+      // Redirect to client page
+      res.redirect('/client');
     } catch (err) {
       res.send(err);
     }
