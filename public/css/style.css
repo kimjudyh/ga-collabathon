@@ -314,6 +314,12 @@ thead {
     max-width: 924px;
   }
 
+  .about {
+    max-width: 924px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
   /* .jumbotron-text {
     display: flex;
     align-items: center;
