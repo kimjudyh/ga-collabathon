@@ -111,6 +111,13 @@ button {
   width: 100%;
 } */
 
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .about {
   display: flex;
   flex-direction: column;
