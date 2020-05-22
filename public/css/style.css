@@ -50,27 +50,27 @@ body, html {
 
 h1 {
   font-family: 'futuraBold', sans-serif;
-  size: 32pt;
+  font-size: 32px;
 }
 
 h2 {
   font-family: 'futuraBold', sans-serif;
-  size: 20pt;
+  font-size: 20px;
 }
 
 h3 {
   font-family: 'futuraMedium', sans-serif;
-  size: 18pt;
+  font-size: 18px;
 }
 
 p {
   font-family: 'PTSansRegular', sans-serif;
-  size: 16pt;
+  font-size: 16px;
 }
 
 nav {
   font-family: 'PTSansRegular', sans-serif;
-  size: 22pt;
+  font-size: 22px;
 }
 
 button {
