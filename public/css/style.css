@@ -82,19 +82,54 @@ body, html {
 /*============== NAV BAR ==============*/
 .nav-link {
   color: black;
+  background-color: white;
 }
 
-.navbar-nav > li{
-  font-size: 25px;
-  padding-left:50px;
-  padding-right:50px;
+.nav-item {
+  font-size: 20px;
+  margin-left:70px;
+  /* padding-right:50px; */
 }
 
 
 /*========== SIGN UP CONFIRMATION ==========*/
-/* .image-container{
+.confirmation-page {
+  display: flex;
+}
 
-} */
+.mad-avocado {
+  width: 271px;
+  height: 261px;
+  margin-top: 13%;
+  margin-left: 75px;
+  margin-right: 5px;
+}
+
+.mad-avocado2 {
+  display: none;
+}
+
+.description {
+  margin: 12% auto;
+}
+
+.description > h1 {
+  text-align: center;
+  margin-bottom: 15%;
+  font-size: 34px;
+  font-weight: 780;
+  letter-spacing: 1.25px;
+}
+
+.description > p {
+  text-align: center;
+}
+
+.description > form {
+  margin-top: 25%;
+  margin-left: 70%;
+  text-align: right;
+}
 
 
 /*============== FOOTER ==============*/
@@ -102,6 +137,7 @@ body, html {
 .push {
   text-align: center;
   height: 30px;
+  font-size: 10px;
 }
 
 
@@ -118,3 +154,40 @@ body, html {
     padding: 10px 20px;
   }
 }
+
+@media screen and (max-width: 990px) {
+  .mad-avocado {
+    display: none;
+  }
+  
+  .mad-avocado2 {
+    display: flex;
+    width: 271px;
+    height: 261px;
+    margin: 0 auto 10%;
+  }
+
+  .confirmation-page {
+    display: grid;
+    margin: auto;
+  }
+
+  .description > h1 {
+    margin-bottom: 8%;
+    font-size: 32px;
+  }
+
+  .description > p {
+    padding-left: 7%;
+    padding-right: 7%;
+    font-size: 14px;
+  }
+
+  .description > form {
+    margin: 7% auto;
+    text-align: center;
+  }
+}
+
+
+
