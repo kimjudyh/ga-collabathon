@@ -1,18 +1,27 @@
 <%- include('partials/_head') %>
 <%- include('partials/_nav') %>
 
-  <main>
-    <h1>Account created successfully.</h1>
 
-    <img src="#" alt="avocado">
+<div class="container">
+  <div class="confirmation">
+    <h1 class="confirmation-text">Account created successfully.</h1>
 
-    <p>You did it, [Name]! Congrats on taking the first step to a better you!</p>
+    <div class="image-container">
+      <img src="/images/mad-avocado.png" alt="mad-avocado">
+    </div>
+
+    <p>You did it, {{[Name]}}! Congrats on taking the first step to a better you!</p>
 
     <p>Look out for a confirmation email at [email]</p>
 
     <form action="/">
       <button type="submit">BACK TO HOME</button>
     </form>
-  </main>
+  </div>
+  <div class="push"></div>
+</div>
+
+    
+
 
 <%- include('partials/_footer') %>
