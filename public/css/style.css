@@ -149,6 +149,25 @@ button {
 
 
 /*============== TABLE ==============*/
+.table {
+  box-shadow: 0px 4px 4px #C3C3C3;
+}
+
+thead {
+  font-family: 'futuraMedium', sans-serif;
+  font-size: 18px;
+}
+ 
+.table thead th {
+  vertical-align: middle;
+}
+
+.tbody {
+  font-family: 'PTSansRegular', sans-serif;
+  font-size: 16px;
+  overflow: scroll;
+}
+
 .thead-green2 {
   background-color: var(--green2-color);
   color: #F1F1F1;
