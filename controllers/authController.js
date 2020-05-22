@@ -38,7 +38,7 @@ router.post('/', async (req, res) => {
       // Creating the new user
       await db.User.create(userData);
   
-      // Redirect to client page
+      // Redirect to confirmation page
       res.redirect('signup/confirmation');
     } catch (err) {
       res.send(err);
