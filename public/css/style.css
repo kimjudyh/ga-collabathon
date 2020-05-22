@@ -14,3 +14,25 @@ body {
 .tr-green1 {
   background-color: #F2F8E1;
 }
+
+.nav-link {
+  color: black;
+}
+
+.navbar-nav > li{
+  font-size: 25px;
+  padding-left:50px;
+  padding-right:50px;
+}
+
+/* .image-container{
+
+} */
+
+footer { 
+  position: absolute; 
+  text-align: center;
+  left: 0 ; right: 0; bottom: 0; 
+}
+
+
