@@ -1,39 +1,40 @@
 <%- include('partials/_head') %>
 <%- include('partials/_nav') %>
 
-  <main>
-    <p>Liberate yourself from your soft, green, mushy cage.</p>
-    <h1>Create your account today.</h1>
+<div class="container">
+  <p>Liberate yourself from your soft, green, mushy cage.</p>
+  <h1>Create your account today.</h1>
 
-    <form action="/signup" method="POST">
-      <div>
-        <input type="text" id="name" name="name" placeholder="Name" />
-      </div>
-      <br />
+  <form action="/signup" method="POST">
+    <div>
+      <input type="text" id="name" name="name" placeholder="Name" />
+    </div>
+    <br />
 
-      <div>
-        <input type="email" id="email" name="email" placeholder="Email" />
-      </div>
-      <br />
+    <div>
+      <input type="email" id="email" name="email" placeholder="Email" />
+    </div>
+    <br />
 
-      <div>
-        <input type="text" id="username" name="username" placeholder="Username" />
-      </div>
-      <br />
+    <div>
+      <input type="text" id="username" name="username" placeholder="Username" />
+    </div>
+    <br />
 
-      <div>
-        <input type="password" id="password" name="password" placeholder="Password" />
-      </div>
-      <br />
+    <div>
+      <input type="password" id="password" name="password" placeholder="Password" />
+    </div>
+    <br />
 
-      <div>
-        <input type="password" id="password2" name="password2" placeholder="Confirm Password" />
-      </div>
-      <br />
+    <div>
+      <input type="password" id="password2" name="password2" placeholder="Confirm Password" />
+    </div>
+    <br />
 
-      <input type="submit" value="Sign Up">
-    </form>
-
-  </main>
+    <input type="submit" value="Sign Up">
+  </form>
+  <div class="push"></div>
+</div>
+    
 
 <%- include('partials/_footer') %>

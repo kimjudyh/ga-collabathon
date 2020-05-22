@@ -1,8 +1,9 @@
-body {
-
+body, html {
+  height: 100%;
+  margin: 0;
 }
 
-/*=== JUMBOTRON  ===*/
+/*============== JUMBOTRON  ==============*/
 .jumbotron {
   display: flex;
   align-items: center;
@@ -49,7 +50,8 @@ body {
   max-width: 100vw;
 }
 
-/*=== BUTTONS ===*/
+
+/*============== BUTTONS ==============*/
 .sign-up {
   padding: 6px 12px;
   background-color: #73A761;
@@ -60,8 +62,8 @@ body {
   box-shadow: 0px 3px #58804A;
 }
 
-/*=== TABLE ===*/
 
+/*============== TABLE ==============*/
 .thead-green2 {
   background-color: #73A761;
   /* TODO: change font color of table header */
@@ -76,6 +78,8 @@ body {
   background-color: #F2F8E1;
 }
 
+
+/*============== NAV BAR ==============*/
 .nav-link {
   color: black;
 }
@@ -86,18 +90,29 @@ body {
   padding-right:50px;
 }
 
+
+/*========== SIGN UP CONFIRMATION ==========*/
 /* .image-container{
 
 } */
 
-footer { 
-  position: absolute; 
+
+/*============== FOOTER ==============*/
+.footer,
+.push {
   text-align: center;
-  left: 0 ; right: 0; bottom: 0; 
+  height: 30px;
 }
 
 
+/*============== UNIVERSAL ==============*/
+.container {
+  min-height: 85%;
+  margin-bottom: -30px;
+}
 
+
+/*============== MEDIA QUERY ==============*/
 @media screen and (max-width: 420px) {
   .about {
     padding: 10px 20px;
