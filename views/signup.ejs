@@ -1,41 +1,39 @@
 <%- include('partials/_head') %>
+<script defer src="/js/signup.js"></script>
 <%- include('partials/_nav') %>
 
-
 <div class="container">
-  <div class="signup-page">
-    <h1>Join us today!</h1>
-    <p>Liberate yourself from your soft, green, mushy cage.</p>
-    
-    <div class="form-row">
-      <form class="form-group mx-sm-3 mb-2" action="/signup" method="POST">
-        <div>
-          <input class="form-control" type="text" id="name" name="name" placeholder="Name" />
-        </div>
+  <p>Liberate yourself from your soft, green, mushy cage.</p>
+  <h1>Create your account today.</h1>
 
-        <div>
-          <input class="form-control" type="email" id="email" name="email" placeholder="Email" />
-        </div>
+  <form class="needs-validation" novalidate action="/signup" method="POST">
+    <div>
+      <input class="form-control" required type="text" id="name" name="name" placeholder="Name"/>
+    </div>
+    <br />
 
-        <div>
-          <input class="form-control" type="text" id="username" name="username" placeholder="Username" />
-        </div>
+    <div>
+      <input class="form-control" required type="email" id="email" name="email" placeholder="Email"/>
+    </div>
+    <br />
 
-        <div>
-          <input class="form-control" type="password" id="password" name="password" placeholder="Password" />
-        </div>
+    <div>
+      <input class="form-control" required type="text" id="username" name="username" placeholder="Username" />
+    </div>
+    <br />
 
-        <div>
-          <input class="form-control" type="password" id="password2" name="password2" placeholder="Confirm Password" />
-        </div>
+    <div>
+      <input class="form-control" required type="password" id="password" name="password" placeholder="Password" />
+    </div>
+    <br />
 
-        <input class="signup-input sign-up" type="submit" value="SIGN UP">
-      </form>
-      <a class="cancel-signup" href="/">Cancel</a>
+    <div>
+      <input class="form-control" required type="password" id="password2" name="password2" placeholder="Confirm Password" />
     </div>
 
-    <div class="push"></div>
-  </div>
+    <input class="sign-up" type="submit" value="Sign Up">
+  </form>
+  <div class="push"></div>
 </div>
     
 
