@@ -1,14 +1,30 @@
 <%- include('partials/_head') %>
 <%- include('partials/_nav') %>
 
-<h2>Client Dashboard</h2>
-<ul>
-<% users.forEach((user) => { %>
-  <li>
-    <%= user.email %>
-  </li>
-<% }) %>
-</ul>
+<div class="container">
+  <h2>Client Dashboard</h2>
+  <table class="table table-striped table-borderless">
+    <thead class="thead-green2">
+      <tr>
+        <th scope="col">First Name</th>
+        <th scope="col">User Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Sign Up Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% users.forEach((user) => { %>
+      <tr class="tr-green1">
+        <td><%= user.name %></td>
+        <td><%= user.username %></td>
+        <td><%= user.email %></td>
+        <td><%= user.createdAt.toLocaleDateString() %></td>
+      </tr>
+      <% }) %>
+    </tbody>
+  </table>
+
+</div>
 
 
 <%- include('partials/_footer') %>
