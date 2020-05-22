@@ -1,6 +1,81 @@
+/*============ FONTS ================*/
+@font-face {
+  font-family: 'futuraMedium';
+  src:
+    url('/fonts/futuraMedium.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'futuraBold';
+  src: 
+    url('/fonts/futuraBold.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'PTSansRegular';
+  src:
+    url('/fonts/PTSansRegularttf.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'PTSansBold';
+  src:
+    url('/fonts/PTSansBold.ttf')
+    format('truetype');
+}
+
+/*============ CSS VARIABLES ============*/
+:root {
+  --main-text-color: #3A3A3A;
+  --main-bg-color: #F4F4F4;
+  --avocado-bg-color: #DEEBB3;
+  --green1-color: #CCE48633;
+  --green2-color: #73A761;
+  --green3-color: #CCE486;
+  --green4-color: #58804A;
+  --reddish-brown-color: #88352D;
+}
+
+/*============= BASIC ELEMENTS ==========*/
+
 body, html {
   height: 100%;
   margin: 0;
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+}
+
+h1 {
+  font-family: 'futuraBold', sans-serif;
+  size: 32pt;
+}
+
+h2 {
+  font-family: 'futuraBold', sans-serif;
+  size: 20pt;
+}
+
+h3 {
+  font-family: 'futuraMedium', sans-serif;
+  size: 18pt;
+}
+
+p {
+  font-family: 'PTSansRegular', sans-serif;
+  size: 16pt;
+}
+
+nav {
+  font-family: 'PTSansRegular', sans-serif;
+  size: 22pt;
+}
+
+button {
+  font-family: 'futuraMedium', sans-serif;
+  size: 16pt;
 }
 
 /*============== JUMBOTRON  ==============*/
@@ -54,19 +129,18 @@ body, html {
 /*============== BUTTONS ==============*/
 .sign-up {
   padding: 6px 15px;
-  background-color: #73A761;
+  background-color: var(--green2-color);
   color: #FFFFFF;
   border-radius: 8px;
   outline: none;
   border: none;
-  box-shadow: 0px 3px #58804A;
+  box-shadow: 0px 3px var(--green4-color);
 }
 
 
 /*============== TABLE ==============*/
 .thead-green2 {
-  background-color: #73A761;
-  /* TODO: change font color of table header */
+  background-color: var(--green2-color);
   color: #F1F1F1;
 }
 
@@ -75,7 +149,7 @@ body, html {
 }
 
 .tr-green1 {
-  background-color: #F2F8E1;
+  background-color: var(--green1-color);
 }
 
 
@@ -88,7 +162,6 @@ body, html {
 .nav-item {
   font-size: 20px;
   margin-left:70px;
-  /* padding-right:50px; */
 }
 
 
