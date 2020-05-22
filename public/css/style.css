@@ -53,7 +53,7 @@ body, html {
 
 /*============== BUTTONS ==============*/
 .sign-up {
-  padding: 6px 12px;
+  padding: 6px 15px;
   background-color: #73A761;
   color: #FFFFFF;
   border-radius: 8px;
@@ -90,6 +90,49 @@ body, html {
   margin-left:70px;
   /* padding-right:50px; */
 }
+
+
+/*========== SIGN UP PAGE ==========*/
+.signup-page {
+  margin: 0 auto;
+  padding: 5%;
+  text-align: center;
+  background-color: rgb(219,219,219);
+}
+
+.signup-page > h1 {
+  margin: 1% auto 3%;
+  padding: 0 40%;
+  font-weight: 700;
+  letter-spacing: 1.25px;
+}
+
+.signup-page > p {
+  margin-bottom: 3%;
+  padding: 0 39%;
+}
+
+.signup-page > form {
+  margin-top: 3%;
+}
+
+.signup-input{
+  margin: 10% auto 1%;
+}
+
+.form-row {
+  display: inline-block;
+}
+
+.form-control {
+  margin-bottom: 7%;
+}
+
+.cancel-signup {
+  color: rgb(124,124,124);
+  text-decoration: underline;
+}
+
 
 
 /*========== SIGN UP CONFIRMATION ==========*/
@@ -156,6 +199,24 @@ body, html {
 }
 
 @media screen and (max-width: 990px) {
+  /* Sign Up Page */
+  .signup-page {
+    padding: 0;
+    background-color: white
+  }
+  
+  .signup-page > h1 {
+    padding: 0 20%;
+    margin-bottom: 7%;
+  }
+  
+  .signup-page > p {
+    padding: 0 23%;
+    margin-bottom: 7%;
+  }
+  
+
+  /* Sign Up Confirmation */
   .mad-avocado {
     display: none;
   }
