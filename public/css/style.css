@@ -53,7 +53,7 @@ body, html {
 
 /*============== BUTTONS ==============*/
 .sign-up {
-  padding: 6px 12px;
+  padding: 6px 15px;
   background-color: #73A761;
   color: #FFFFFF;
   border-radius: 8px;
@@ -82,19 +82,92 @@ body, html {
 /*============== NAV BAR ==============*/
 .nav-link {
   color: black;
+  background-color: white;
 }
 
-.navbar-nav > li{
-  font-size: 25px;
-  padding-left:50px;
-  padding-right:50px;
+.nav-item {
+  font-size: 20px;
+  margin-left:70px;
+  /* padding-right:50px; */
+}
+
+
+/*========== SIGN UP PAGE ==========*/
+.signup-page {
+  margin: 0 auto;
+  padding: 5%;
+  text-align: center;
+  background-color: rgb(219,219,219);
+}
+
+.signup-page > h1 {
+  margin: 1% auto 3%;
+  padding: 0 40%;
+  font-weight: 700;
+  letter-spacing: 1.25px;
+}
+
+.signup-page > p {
+  margin-bottom: 3%;
+  padding: 0 39%;
+}
+
+.signup-page > form {
+  margin-top: 3%;
+}
+
+.signup-input{
+  margin: 13% auto 1%;
+}
+
+.form-row {
+  display: inline-block;
+}
+
+.cancel-signup {
+  color: rgb(124,124,124);
+  text-decoration: underline;
 }
 
 
 /*========== SIGN UP CONFIRMATION ==========*/
-/* .image-container{
+.confirmation-page {
+  display: flex;
+}
 
-} */
+.mad-avocado {
+  width: 271px;
+  height: 261px;
+  margin-top: 13%;
+  margin-left: 75px;
+  margin-right: 5px;
+}
+
+.mad-avocado2 {
+  display: none;
+}
+
+.description {
+  margin: 12% auto;
+}
+
+.description > h1 {
+  text-align: center;
+  margin-bottom: 15%;
+  font-size: 34px;
+  font-weight: 780;
+  letter-spacing: 1.25px;
+}
+
+.description > p {
+  text-align: center;
+}
+
+.description > form {
+  margin-top: 25%;
+  margin-left: 70%;
+  text-align: right;
+}
 
 
 /*============== FOOTER ==============*/
@@ -102,6 +175,7 @@ body, html {
 .push {
   text-align: center;
   height: 30px;
+  font-size: 10px;
 }
 
 
@@ -113,8 +187,66 @@ body, html {
 
 
 /*============== MEDIA QUERY ==============*/
+
 @media screen and (max-width: 420px) {
+  /* ------- Home Page ------- */
   .about {
     padding: 10px 20px;
   }
 }
+
+
+@media screen and (max-width: 990px) {
+  /* ------- Sign Up Page -------*/
+  .signup-page {
+    padding: 0;
+    background-color: white
+  }
+  
+  .signup-page > h1 {
+    padding: 0 20%;
+    margin-bottom: 7%;
+  }
+  
+  .signup-page > p {
+    padding: 0 23%;
+    margin-bottom: 7%;
+  }
+  
+
+  /*------- Sign Up Confirmation -------*/
+  .mad-avocado {
+    display: none;
+  }
+  
+  .mad-avocado2 {
+    display: flex;
+    width: 271px;
+    height: 261px;
+    margin: 0 auto 10%;
+  }
+
+  .confirmation-page {
+    display: grid;
+    margin: auto;
+  }
+
+  .description > h1 {
+    margin-bottom: 8%;
+    font-size: 32px;
+  }
+
+  .description > p {
+    padding-left: 7%;
+    padding-right: 7%;
+    font-size: 14px;
+  }
+
+  .description > form {
+    margin: 7% auto;
+    text-align: center;
+  }
+}
+
+
+
