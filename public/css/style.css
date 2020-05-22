@@ -117,22 +117,17 @@ body, html {
 }
 
 .signup-input{
-  margin: 10% auto 1%;
+  margin: 13% auto 1%;
 }
 
 .form-row {
   display: inline-block;
 }
 
-.form-control {
-  margin-bottom: 7%;
-}
-
 .cancel-signup {
   color: rgb(124,124,124);
   text-decoration: underline;
 }
-
 
 
 /*========== SIGN UP CONFIRMATION ==========*/
@@ -192,14 +187,17 @@ body, html {
 
 
 /*============== MEDIA QUERY ==============*/
+
 @media screen and (max-width: 420px) {
+  /* ------- Home Page ------- */
   .about {
     padding: 10px 20px;
   }
 }
 
+
 @media screen and (max-width: 990px) {
-  /* Sign Up Page */
+  /* ------- Sign Up Page -------*/
   .signup-page {
     padding: 0;
     background-color: white
@@ -216,7 +214,7 @@ body, html {
   }
   
 
-  /* Sign Up Confirmation */
+  /*------- Sign Up Confirmation -------*/
   .mad-avocado {
     display: none;
   }
