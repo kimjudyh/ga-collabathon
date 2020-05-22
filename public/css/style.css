@@ -1,0 +1,467 @@
+/*============ FONTS ================*/
+@font-face {
+  font-family: 'futuraMedium';
+  src:
+    url('/fonts/futuraMedium.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'futuraBold';
+  src: 
+    url('/fonts/futuraBold.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'PTSansRegular';
+  src:
+    url('/fonts/PTSansRegularttf.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'PTSansBold';
+  src:
+    url('/fonts/PTSansBold.ttf')
+    format('truetype');
+}
+
+/*============ CSS VARIABLES ============*/
+:root {
+  --main-text-color: #3A3A3A;
+  --main-bg-color: #F4F4F4;
+  --avocado-bg-color: #DEEBB3;
+  --green1-color: #CCE48633;
+  --green2-color: #73A761;
+  --green3-color: #CCE486;
+  --green4-color: #58804A;
+  --reddish-brown-color: #88352D;
+}
+
+/*============= BASIC ELEMENTS ==========*/
+
+body, html {
+  height: 100%;
+  margin: 0;
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+}
+
+h1 {
+  font-family: 'futuraBold', sans-serif;
+  font-size: 32px;
+}
+
+h2 {
+  font-family: 'futuraBold', sans-serif;
+  font-size: 20px;
+}
+
+h3 {
+  font-family: 'futuraMedium', sans-serif;
+  font-size: 18px;
+}
+
+p {
+  font-family: 'PTSansRegular', sans-serif;
+  font-size: 16px;
+}
+
+nav {
+  font-family: 'PTSansRegular', sans-serif;
+  font-size: 22px;
+  background-color: white;
+  color: var(--main-text-color);
+}
+
+button {
+  font-family: 'futuraMedium', sans-serif;
+  size: 16pt;
+}
+
+/*============== JUMBOTRON  ==============*/
+.jumbotron {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.jumbotron-overlay {
+  background: url("/images/angryavo-mobile-home-v3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  max-width: 414px;
+  /* height: 45%;
+  width: 100%; */
+}
+
+/* .jumbotron-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000B3;
+  color: #FFFFFF;
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+  width: 100%;
+} */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding: 50px 50px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 4px #C3C3C3;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.about-image img {
+  max-height: 173px;
+  max-width: 100vw;
+}
+
+
+/*============== BUTTONS ==============*/
+.sign-up {
+  padding: 6px 30px;
+  background-color: var(--green2-color);
+  color: #FFFFFF;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 3px var(--green4-color);
+  font-size: 16px;
+}
+
+
+/*============== TABLE ==============*/
+.table {
+  box-shadow: 0px 4px 4px #C3C3C3;
+}
+
+thead {
+  font-family: 'futuraMedium', sans-serif;
+  font-size: 18px;
+}
+ 
+.table thead th {
+  vertical-align: middle;
+}
+
+.tbody {
+  font-family: 'PTSansRegular', sans-serif;
+  font-size: 16px;
+  overflow: scroll;
+}
+
+.thead-green2 {
+  background-color: var(--green2-color);
+  color: #F1F1F1;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #FFF;
+}
+
+.tr-green1 {
+  background-color: var(--green1-color);
+}
+
+
+/*============== NAV BAR ==============*/
+.nav-link {
+  color: black;
+  /* background-color: white; */
+}
+
+.nav-item {
+  font-size: 20px;
+  margin-left:60px;
+}
+
+.navbar-toggler {
+  margin-right: 20px;
+}
+
+
+/*========== SIGN UP PAGE ==========*/
+.signup-page {
+  background-image: url(/images/avo-circle-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  padding: 10%;
+  text-align: center;
+}
+
+.signup-page > h1 {
+  margin: 1% auto 3%;
+  /* padding: 0 40%; */
+  font-weight: 700;
+  letter-spacing: 1.25px;
+  font-family: 'futuraBold', sans-serif;
+  font-size: 32px;
+  color: var(--main-text-color);
+}
+
+.signup-page > p {
+  margin-bottom: 4%;
+  letter-spacing: 1.2px;
+  color: var(--main-text-color);
+  font-family: 'PTSansRegular', sans-serif;
+  font-size: 16px;
+}
+
+/* .signup-page > form {
+  margin-top: 3%;
+} */
+.signup-input {
+  margin: 8% auto 1%;
+}
+
+.form-row {
+  display: inline-block;
+  /* max-width: 350px; */
+}
+
+.cancel-signup {
+  color: rgb(124,124,124);
+  text-decoration: underline;
+}
+
+.form-row .form-control {
+  width: 290px;
+  border: 0;
+  box-shadow: 0 0 0;
+  color: #555555;
+  padding: 10px 0;
+  border-bottom: 1.3px solid #efefef;
+  line-height: 20px;
+  margin-bottom: 5px;
+  /* height: auto; */
+}
+
+/* .form-row .form-group {
+  margin-bottom: 0;
+  border-bottom: 1.3px solid #efefef;
+  padding-right: 100px;
+  position: relative;
+} */
+
+.form-group {
+  background: #ffffff;
+  color: #999999;
+  border-radius: 8px;
+  padding: 10px 25px;
+}
+
+/*======================= NEW FORM =======================*/
+/* .login-form-1 {
+  max-width: 350px;
+  display: inline-block;
+  box-shadow: 1px 2.5px 1px  rgb(190,199,157);
+}
+.login-form-1 .form-control {
+  border: 0;
+  box-shadow: 0 0 0;
+  color: #555555;
+  padding: 10px 0;
+  height:auto;
+}
+.login-form-1 .form-group {
+  margin-bottom: 0;
+  border-bottom: 1.3px solid #efefef;
+  padding-right: 100px;
+  position: relative;
+}
+.login-form-1 .form-group:last-child {
+  border-bottom: 0;
+}
+.login-group {
+  background: #ffffff;
+  color: #999999;
+  border-radius: 8px;
+  padding: 10px 25px;
+} */
+
+/*========== SIGN UP CONFIRMATION ==========*/
+.confirmation-page {
+  display: flex;
+}
+
+.mad-avocado {
+  width: 271px;
+  height: 261px;
+  margin-top: 13%;
+  margin-left: 75px;
+  margin-right: 5px;
+}
+
+.mad-avocado2 {
+  display: none;
+}
+
+.description {
+  margin: 12% auto;
+}
+
+.description > h1 {
+  text-align: center;
+  margin-bottom: 15%;
+  font-size: 34px;
+  font-weight: 780;
+  letter-spacing: 1.25px;
+  color: var(--main-text-color);
+  font-family: 'futuraBold', sans-serif;
+  font-size: 32px;
+}
+
+.description > p {
+  text-align: center;
+  color: var(--main-text-color);
+  font-family: 'PTSansRegular', sans-serif;
+  font-size: 16px;
+}
+
+.description > form {
+  margin-top: 25%;
+  margin-left: 70%;
+  text-align: right;
+}
+
+
+/*============== FOOTER ==============*/
+.footer,
+.push {
+  text-align: center;
+  height: 30px;
+  font-size: 10px;
+}
+
+
+/*============== UNIVERSAL ==============*/
+.container {
+  min-height: 85%;
+  margin-bottom: -30px;
+}
+
+
+/*============== MEDIA QUERY ==============*/
+
+@media screen and (max-width: 420px) {
+  /* ------- Home Page ------- */
+  .about {
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (min-width: 420px) {
+    /* desktop jumbotron image*/
+  .jumbotron-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("/images/angryavo-desktop-home-v2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 350px;
+    max-width: 924px;
+  }
+
+  .about {
+    max-width: 924px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  /* .jumbotron-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000B3;
+    color: #FFFFFF;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    width: 100%;
+  }
+  
+  .jumbotron-text h2 {
+    font-size: 32px;
+  } */
+} 
+
+
+@media screen and (max-width: 990px) {
+  /* ------- Sign Up Page -------*/
+  .signup-page {
+    padding: 0;
+    background-image: none;
+  }
+  
+  .signup-page > h1 {
+    padding: 0 20%;
+    margin-bottom: 7%;
+  }
+  
+  .signup-page > p {
+    padding: 0 23%;
+    margin-bottom: 7%;
+  }
+
+  /*------- Sign Up Confirmation -------*/
+  .mad-avocado {
+    display: none;
+  }
+  
+  .mad-avocado2 {
+    display: flex;
+    width: 271px;
+    height: 261px;
+    margin: 0 auto 10%;
+  }
+
+  .confirmation-page {
+    display: grid;
+    margin: auto;
+  }
+
+  .description > h1 {
+    margin-bottom: 8%;
+    font-size: 32px;
+  }
+
+  .description > p {
+    padding-left: 7%;
+    padding-right: 7%;
+    font-size: 14px;
+  }
+
+  .description > form {
+    margin: 7% auto;
+    text-align: center;
+  }
+}
+
+
+
