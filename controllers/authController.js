@@ -39,11 +39,20 @@ router.post('/', async (req, res) => {
       await db.User.create(userData);
   
       // Redirect to client page
-      res.redirect('/client');
+      res.redirect('signup/confirmation');
     } catch (err) {
       res.send(err);
     }
   });
+
+
+// GET Register Confirmation
+router.get('/confirmation', (req, res) => {
+  res.render('confirmation', {
+      title: 'Confirmation',
+  });
+});
+
 
 // ==== EXPORTS
 module.exports = router;
