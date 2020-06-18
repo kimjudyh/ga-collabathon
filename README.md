@@ -1,17 +1,5 @@
 # Avocado Anonymous
 
-## Wireframe
----
-### Figma Board
-![figmaboard](/public/images/README-images/figmaboard.png)
-
-![sticker-board](/public/images/README-images/sticker-board.png)
-
-![mobile](/public/images/README-images/mobile.png)
-
-![website](/public/images/README-images/website.png)
-
-### Website
 ![home-page](/public/images/README-images/home-page.png)
 
 ![home-page-2](/public/images/README-images/home-page-2.png)
@@ -25,6 +13,18 @@
 ![register-success](/public/images/README-images/register-success.png)
 
 ![dashboard](/public/images/README-images/dashboard.png)
+
+## Wireframe
+---
+### Figma Board
+![figmaboard](/public/images/README-images/figmaboard.png)
+
+![sticker-board](/public/images/README-images/sticker-board.png)
+
+![mobile](/public/images/README-images/mobile.png)
+
+![website](/public/images/README-images/website.png)
+
 
 ## Technologies Used
 ---
