@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 
 // ===== CONFIG
-const connectionString = process.env.MONGODB_URI || 'mongodb://localhost:27017/collabathon';
+const connectionString = process.env.mLAB_MONGODB_URI; //|| 'mongodb://localhost:27017/collabathon';
 const configOptions = {
   useNewUrlParser: true,
   useCreateIndex: true,
