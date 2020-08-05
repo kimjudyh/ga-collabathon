@@ -4,6 +4,8 @@ const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 const path = require('path');
 const session = require('express-session');
+// require('dotenv').config()
+// need to install dotenv
 
 const app = express();
 const port = process.env.PORT || 4000;
